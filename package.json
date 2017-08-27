@@ -1,0 +1,33 @@
+{
+  "name": "iplayer-renamer",
+  "version": "1.0.0",
+  "description": "Rename files downloaded with get_iplayer",
+  "main": "cli.js",
+  "bin": "./cli.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "author": "Stein Cato Blostrupmoen",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "glob": "^7.1.2",
+    "meow": "^3.7.0",
+    "prompt-confirm": "^1.2.0",
+    "titlecase": "^1.1.2",
+    "zero-fill": "^2.2.3"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.2",
+    "prettier": "^1.5.3"
+  }
+}
